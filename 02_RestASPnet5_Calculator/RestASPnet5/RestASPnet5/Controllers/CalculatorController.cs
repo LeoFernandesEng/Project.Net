@@ -20,7 +20,7 @@ namespace RestASPnet5.Controllers
         }
 
         [HttpGet("sum/{firstNumber}/{secondeNumber}")]
-        public IActionResult GetSum(string firstNumber, string secondeNumber)
+        public IActionResult Sum(string firstNumber, string secondeNumber)
         {
             if (IsNumeric(firstNumber) && IsNumeric(firstNumber))
             {
@@ -31,7 +31,7 @@ namespace RestASPnet5.Controllers
         }
 
         [HttpGet("sub/{firstNumber}/{secondeNumber}")]
-        public IActionResult GetSub(string firstNumber, string secondeNumber)
+        public IActionResult Subtraction(string firstNumber, string secondeNumber)
         {
             if (IsNumeric(firstNumber) && IsNumeric(firstNumber))
             {
@@ -42,7 +42,7 @@ namespace RestASPnet5.Controllers
         }
 
         [HttpGet("mult/{firstNumber}/{secondeNumber}")]
-        public IActionResult GetMult(string firstNumber, string secondeNumber)
+        public IActionResult Multplication(string firstNumber, string secondeNumber)
         {
             if (IsNumeric(firstNumber) && IsNumeric(firstNumber))
             {
@@ -53,7 +53,7 @@ namespace RestASPnet5.Controllers
         }
 
         [HttpGet("div/{firstNumber}/{secondeNumber}")]
-        public IActionResult GetDiv(string firstNumber, string secondeNumber)
+        public IActionResult Division(string firstNumber, string secondeNumber)
         {
             if (IsNumeric(firstNumber) && IsNumeric(firstNumber))
             {
@@ -62,9 +62,9 @@ namespace RestASPnet5.Controllers
             }
             return BadRequest("Invalide Input");
         }
-
+        
         [HttpGet("avg/{firstNumber}/{secondeNumber}")]
-        public IActionResult GetAvg(string firstNumber, string secondeNumber)
+        public IActionResult Average(string firstNumber, string secondeNumber)
         {
             if (IsNumeric(firstNumber) && IsNumeric(firstNumber))
             {
@@ -75,7 +75,7 @@ namespace RestASPnet5.Controllers
         }
 
         [HttpGet("sqrt/{firstNumber}")]
-        public IActionResult GetSqrt(string firstNumber)
+        public IActionResult SquareRoot(string firstNumber)
         {
             if (IsNumeric(firstNumber) && IsNumeric(firstNumber))
             {
